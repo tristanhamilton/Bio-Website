@@ -1,0 +1,225 @@
+/*Star of Globals*/
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+h1 {
+  font-size: 8rem;
+}
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+  
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  li {
+    list-style: none; 
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  /* End of Globals
+     Start Nav Page */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00000096;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10; 
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  @media (max-width: 2em) {
+    .nav {
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: bold; 
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-red);
+  }
+  /* End of Nav Page
+     Start of Welcome Page */
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  
+  #name {
+    margin-top: 20vh; 
+  }
+  .welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+  }
+  
+  .spacer {
+    height: 2rem;
+  }
+  #bio {
+    
+    color: white; 
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;  
+    padding: 10vh;
+    
+  }
+
+  #profile-pic {
+    border: 5px solid var(--main-blue);
+    border-radius: 2rem;
+    display: block;
+    max-width:50rem;
+    max-height:50rem;
+    width: 100%;
+    height: auto;
+  }
+  #image-sub {
+    font-size: 1rem;
+    font-style: italic;
+  }
+/* End of Welcome Page
+   Start Services Page */
+
+   .services-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-blue);
+  }
+  
+  .services {
+    background-color: var(--main-red);
+    height: 30vh;
+    max-width: 100vw; 
+    width: 80vw; 
+    text-align: center;   
+    border: 2px solid gold;  
+  }
+
+  .service-title {
+    font-weight: bold; 
+    padding-top: 1vh;
+    padding-bottom: 1vh; 
+    border-bottom: 1px solid white; 
+  }
+
+  .service-details {
+    list-style-type: dotted;
+    font-style: italic; 
+    text-align: center; 
+    
+  }
+
+  .option {
+    padding: .8vh;
+  } 
+  .prices {
+    font-weight: bold; 
+    font-size: 2rem;
+    background: linear-gradient(var(--main-gray), var(--main-blue));
+    color: gold;
+    height: 3.4vh;
+    border-top: 1px solid gold; 
+   }
+/* End of Services Page
+   Start Contact / Footer */  
+  .contact-info {
+    width: 100%;
+    height: 25vh; 
+    background-color: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+
+
+  #contact-me {
+  font-size: 3vh;
+  border-bottom: 2px solid white; 
+  margin: 3rem; 
+  }
+
+  .contact-list a:hover {
+    background: var(--main-red);
+    padding: 1rem 2rem;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .contacts {
+    padding: 2vw
+  }
+
+ 
